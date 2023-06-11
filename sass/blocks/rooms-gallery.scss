@@ -1,0 +1,171 @@
+.rooms-gallery {
+    margin-top: 50px;
+
+
+        .content {
+            border: 1px solid $color-black;
+            padding: 10px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .col-12 h2 {
+            font-size: 30px;
+            font-weight: 600;
+            color: $color-grey-dark;
+            margin-bottom: 30px;
+        }
+
+        .col-12 p {
+            color: $color-grey-dark;
+        }
+
+        .price {
+            text-align: center;
+            margin: 20px;
+            padding: 20px 0;
+            color: $color-grey;
+            font-size: 25px;
+            line-height: 40px;
+        }
+
+        .price strong {
+            font-weight: 800;
+            font-size: xx-large;
+        }
+
+
+
+        .option {
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 20px 0;
+
+            .option-svg {
+                display: flex;
+                height: 55px;
+                width: 30px;
+                margin: 0 40px;
+            }
+
+            .option-wifi {
+                display: flex;
+                height: 55px;
+                width: 30px;
+                margin: 0 40px;
+            }
+        }
+
+        .option-border {
+            text-align: center;
+            border: 1px solid $color-black;
+        }
+
+
+        .double-room {
+            margin: 20px 0;
+        }
+
+        .btn {
+            color: $color-white;
+            width: 200px;
+            margin: 25px 0;
+            border: 1px solid $color-black;
+            border-radius: 0;
+            background-color: $color-grey;
+        }
+
+        .btn:hover {
+            background-color: $color-grey-light;
+        }
+
+        .btn-back {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+
+        }
+
+        .btn-back a {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            width: 50%;
+            color: $color-black;
+            border: 1px solid black;
+            background-color: transparent;
+            padding: 5px 0;
+        }
+
+        .btn-back a:hover {
+            background-color: $color-grey-light;
+        }
+
+    }
+
+
+    .splide {
+        &__thumbnail {
+            justify-content: center;
+        }
+
+        &__slide {
+            opacity: 0.5;
+            border: none;
+        }
+
+
+
+        &__slide:active,
+        :hover {
+            opacity: 1;
+        }
+
+}
+
+@media (min-width: $width-tablet ) {
+    .rooms-gallery {
+
+        // margin-bottom: 60px;
+        .content {
+            border: none;
+        }
+
+        .option-border {
+            border: none;
+            display: none;
+        }
+
+        .option-block {
+            padding: 20px 0;
+            margin-top: 50px;
+            border: 1px solid $color-black;
+        }
+
+        .col-frame {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid $color-black;
+        }
+
+        .price-block {
+            border-top: 1px solid $color-black;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: $width-desktop ) {
+    .rooms-gallery {
+
+        .price-block {
+            margin-top: 150px;
+            border-top: 2px solid $color-black;
+        }
+    }
+}

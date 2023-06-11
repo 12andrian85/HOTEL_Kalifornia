@@ -1,0 +1,56 @@
+.about-page {
+    margin-top: 60px;
+
+    .row {
+        margin: 20px 0;
+    }
+
+    .col {
+        height: 100%;
+        padding: 30px;
+        border: 1px solid black;
+        margin: 20px 25px 0 25px;
+
+    }
+
+    .col h2 {
+        font-size: 50px;
+        color: $color-grey;
+        margin-bottom: 15px;
+    }
+
+    .col p {
+        font-size: 14px;
+        color: $color-grey;
+
+    }
+
+    .col-12 {
+        padding-bottom: 20px;
+    }
+
+    .col-12 img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .btn {
+        margin: 30px 0;
+        width: 40%;
+        border-radius: 0;
+        border-color: $color-black;
+    }
+
+    .btn:hover {
+        background-color: $color-grey-light;
+        border-color: $color-black;
+    }
+}
+
+@media (min-width: $width-tablet ) {
+    .about-page {
+        .col {
+            margin: 0;
+        }
+    }
+}

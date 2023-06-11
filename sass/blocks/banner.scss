@@ -1,0 +1,36 @@
+.banner {
+    height: 350px;
+    background-image: url("/img/background_hotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+
+    &__text {
+        padding: 0px 70px;
+        margin: 0;
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0.4784313725);
+    }
+
+    &__text h1 {
+        color: white;
+        font-size: 35px;
+        font-weight: 600;
+
+    }
+
+}
+
+@media (min-width: $width-tablet ) {
+    .banner {
+        &__text h1 {
+            font-size: 45px;
+            font-weight: 600;
+        }
+    }
+
+}

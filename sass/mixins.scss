@@ -7,9 +7,22 @@
 @mixin outline {
     // min-height: 50px;
     outline-color: tomato;
-    // outline-style: dashed;
+    // outline-style: dashed;      
     outline-width: 1px;
 }
+
+@mixin spaces{
+    padding: 20px 0;
+
+    @media (min-width: $width-tablet ) {
+       padding: 40px 0;
+    }
+
+    @media (min-width: $width-desktop ) {
+        padding: 80px 0;
+    }
+}
+
 
 @mixin container-form{
     padding: 0 20px;

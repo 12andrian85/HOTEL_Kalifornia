@@ -1,0 +1,54 @@
+.carousel {
+    position: relative;
+
+    .carousel-inner {
+        height: 90vh;
+        background-position: top;
+    }
+
+    .carousel-item{
+        height: 100%;
+    }
+
+    .carousel-item img{
+        object-fit: cover;
+        height: 100%;
+    }
+
+    &__logo {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+    }
+
+    &__img {
+        border: 1px solid white;
+        padding: 15px 30px;
+        background-color: black;
+        opacity: 0.7;
+        z-index: 1;
+
+    }
+
+    &__foto {
+        height: 110px;
+    }
+
+    &__btn {
+        width: 100%;
+        margin-top: 50px;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid white;
+        border-radius: 1;
+        background-color: black;
+        color: white;
+        opacity: 0.7;
+    }
+
+    &__btn:hover {
+        opacity: 0.6;
+    }
+}

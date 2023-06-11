@@ -22,7 +22,7 @@ input {
     font-size: 1rem;
     // font-weight: bold;
     line-height: 1.1;
-    background-color: $color-white;
+    background-color: $color-grey-light;
 }
 
 select,
@@ -31,12 +31,15 @@ input[type="email"],
 input[type="password"],
 input[type="number"],
 input[type="tel"] {
+
     width: 100%;
     padding: 10px 10px;
     color: $color-text-base;
-    border: 2px solid $color-grey;
-    border-radius: 10px;
-
+    // border: 2px solid $color-grey;
+    border-radius: 0;
+    background-color: $color-white;
+    opacity: 0.8;
+    
     // Manage hover state
     // &:hover {
     //     @extend .field-hover;
@@ -54,13 +57,15 @@ input[type="tel"] {
     }
 }
 
-textarea {
+.textarea {
     width: 100%;
     min-height: 100px;
     padding: 20px;
     resize: vertical;
-    border: 2px solid grey;
-    border-radius: 15px;
+    // border: 2px solid grey;
+    // border-radius: 15px;
+    background-color: $color-white;
+    opacity: 0.8;
 }
 
 // style custom radio and checkbox

@@ -4,9 +4,10 @@
 $color-primary: #00D56DFF;
 $color-secondary: #1D466FFF;
 
+$color-grey-dark: #4c4f52;
 $color-grey: #7A7B7AFF;
-$color-grey-light: rgb(243, 243, 243);
-$color-grey-dark: #2F363E;
+$color-grey-light: rgb(214, 214, 214);
+$color-grey-lighter: rgb(234, 230, 230);
 $color-white: #ffffff;
 $color-black: #000000;
 $color-green: rgb(0, 168, 87);
@@ -14,7 +15,7 @@ $color-green: rgb(0, 168, 87);
 
 $color-text-base: $color-grey-dark;
 
-$font-family: 'Open Sans', sans-serif;
+$font-family: 'Domine', serif;
 
 $width-mobile: 320px;
 $width-tablet: 768px;

@@ -1,0 +1,71 @@
+.wellness {
+    @include spaces;
+    
+
+    .card-body {
+        font-size: 12px;
+        color: $color-grey-dark
+    }
+    .card{
+        border: none;
+    }
+
+    .btn {
+        margin: 20px 0;
+        padding: 5px 40px;
+        border-radius: 0;
+        border: 1px solid $color-black;
+        color: $color-black;
+    }
+
+    .btn:hover {
+        border: 1px solid $color-black;
+        background-color: $color-grey-light;
+    }
+}
+
+@media (min-width: $width-tablet ) {
+    .wellness {
+
+        .row{
+            .row{
+                height: 100%;
+            }
+        }
+
+        .article{
+            height: 100%;
+            border: 1px solid $color-black;
+        }
+        .foto {
+            height: 50%;
+        }
+        .img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .card-body h2{
+                font-size: 45px;
+                font-weight: bold;
+        }
+        .card-body {
+            font-size: 16px;
+            color: $color-grey-dark;
+        }
+       
+    }
+}
+@media (min-width: $width-desktop ) {
+    .wellness{
+
+        .foto {
+            height: 50%;
+        }
+        .img{
+            height: 343px;
+        }
+       
+    } 
+
+}

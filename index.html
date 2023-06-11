@@ -5,29 +5,426 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.css">
     <title>Hotel Kalifornia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- header (navigation) -->
-    <header class="header" style="background-color: grey;">
-        <h1>Hello World</h1>
-        <p></p>
+    <header class="header">
+        <!-- header (navigation) -->
+
+        <nav class="navbar navbar-expand-lg " style="position: fixed;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/small_logo_white.webp" alt="">
+                </a>
+                <button class="navbar-toggler btn-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Abouts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rooms-gallery.html">Rooms</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Offer
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
+
+
+
+    <!-- <div class="row z-2 p-2 header__bar">
+            <div class="col-4 d-flex header__logo">
+                <img src="/img/small_logo_white.webp" alt="">
+            </div>
+            <div class="col-6">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="">home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="">rooms</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="">about</a>
+                    </li>
+                    <li class="nav__item nav__item--list">
+                        <a href="">offer</a>
+                        <ul class="nav__list d-none flex-column">
+                            <li class="nav-list__items">text</li>
+                            <li class="nav-list__items">text</li>
+                            <li class="nav-list__items">text</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+    <!-- carousel -->
+    <div id="carouselExampleInterval" class="carousel carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner me-4">
+            <div class="carousel__logo">
+                <div class="carousel__img">
+                    <img class="carousel__foto" src="/img/logo_white.webp" alt="">
+                </div>
+                <button class="carousel__btn" type="button">Read more</button>
+            </div>
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="/img/banner_1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="/img/banner_2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/banner_3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </header>
     <main>
+        <!-- rooms -->
+        <div class="rooms">
+            <div class="container">
+                <h1 class="rooms-title text-center">Rooms</h1>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="card " style="width: auto;">
+                            <img src="/img/2000_josib7_img_ce1574fb63ff39d871932fae58f18449.webp" class="rooms__img"
+                                style="height: 17rem; width:100%" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Single Room</h5>
+                                <div class=" d-flex align-items-center flex-column">
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                        in voluptate
+                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                        cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <a href="rooms-gallery.html" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="card " style="width: auto;">
+                            <img src="/img/2000_josib7_img_7b2853287c7056e19bdef5b374ada27a.webp" class="rooms__img"
+                                style="height: 17rem; width:100%" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Double Room</h5>
+                                <div class=" d-flex align-items-center flex-column">
+                                    <p class="card-text pt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                        in voluptate
+                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                        cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <a href="rooms-gallery.html" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="card " style="width: auto;">
+                            <img src="/img/2000_josib7_img_8bee9116771389102eb6233ed2404a07.webp" class="rooms__img"
+                                style="height: 17rem; width:100%" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Treple Room</h5>
+                                <div class=" d-flex align-items-center flex-column">
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                        in voluptate
+                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                        cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <a href="rooms-gallery.html" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about -->
+        <div class="about">
+            <div class="one">
+                <img class="one__object one__van one__move-right" src="/img/background_hotel.jpg" alt="">
+            </div>
+            <div class="container d-flex flex-column align-items-center py-5">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam...
+                </p>
+                <a href="about.html" role="button" class="btn btn-lg ">Read more</a>
+            </div>
+        </div>
+
+        <!-- offer -->
+        <div class="offer py-5">
+            <div class="container">
+                <h2 class="text-center">Offer</h2>
+                <div class="row">
+                    <div class="col col-12 col-md-7 col-lg-5 order-2 order-md-1 col-body">
+                        <div class="inner me-4">
+                            <h3 class="">Conference Room</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit
+                                anim id est laborum.
+                            </p>
+                            <a class="btn btn-primary" href="Conference-room.html" role="button">Read more</a>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-5 col-lg-7 order-1 order-md-2">
+                        <img src="/img/conference-room_1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-12 col-md-5 col-lg-7">
+                        <img src="/img/Weddings_3.jpg" alt="">
+                    </div>
+                    <div class="col col-12 col-md-7 col-lg-5">
+                        <div class="inner ms-4">
+                            <h3>Wedding receptions</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit
+                                anim id est laborum.
+                            </p>
+                            <a class="btn btn-primary" href="Wedding-receptions.html" role="button">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-12 col-md-7 col-lg-5 order-2 order-md-1">
+                        <div class="inner me-4">
+                            <h3>Hotel restaurant</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit
+                                anim id est laborum.
+                            </p>
+                            <a class="btn btn-primary" href="hotel.html" role="button">Read more</a>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-5 col-lg-7 order-1 order-md-2">
+                        <img src="/img/restaurant_1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-12 col-md-5 col-lg-7">
+                        <img src="/img/spa_2.jpg" style="height: 100%;" alt="">
+                    </div>
+                    <div class="col col-12 col-md-7 col-lg-5">
+                        <div class="inner ms-4">
+                            <h3 class="my-5">Spa & Wellness</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit
+                                anim id est laborum.
+                            </p>
+                            <a class="btn btn-primary" href="spa&wellness.html" role="button">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->
+
+        <div class="contact">
+            <div class="card text-bg-dark">
+                <img src="/img/banner_2.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay ">
+                    <h5 class="card-title">Book a room of your dreams now</h5>
+                    <div class="row">
+                        <h4>Write to us!</h4>
+                        <div class="field mb-1">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                        </div>
+                        <div class="field mb-1">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Your e-mail">
+                        </div>
+                        <div class="field mb-1">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="field mb-1">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="phone number">
+                        </div>
+                        <div class="col-12-auto">
+                            <button type="submit" class="btn">send</button>
+                        </div>
+                    </div>
+                    <span class="card-call">
+                        or give us a call <br>
+                        + 1 123 456 7890
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- <div class="contact py-5">
+            <div class="text-center">
+                <h2>Book a room of your dreams now!</h2>
+                <div class="row">
+                    <h4>Write to us!</h4>
+                    <div class="field">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                    </div>
+                    <div class="field mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Your e-mail">
+                    </div>
+                    <div class="field mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="phone number">
+                    </div>
+                    <div class="col-12-auto">
+                        <button type="submit" class="btn mb-3">send</button>
+                    </div>
+                    <div class="col">
+                        <span>or give us a call <br>
+                            + 1 123 456 7890</span>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- map -->
+        <div class="map">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d52596.95377123706!2d28.475971717481627!3d46.145032344360516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1685440830559!5m2!1sru!2s"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </main>
+
 
     <!-- footer -->
     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3 justify-content-center d-flex">
+                    <img src="img/logo_black.webp" alt="">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="border-style">
+                        <span class="my-5">Address:</span>
+                        <p>
+                            1328 Broadway <br>
+                            New York, NY 10001,
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="border-style">
+                        <span>Contact:</span>
+                        <p>
+                            +1 123 456 7890 <br>
+                            office@californiahotel.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 d-none d-lg-block">
+                    <div class="border-style style-last">
+                        <span>
+                            Website created in white label resspanonsive website builder <strong>WebWave</strong>.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="developer d-lg-none">
+            Website created in white label responsive website builder <strong>WebWave</strong>.
+        </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> -->
     <script src="script.js"></script>
 </body>
+
 </html>

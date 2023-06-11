@@ -1,0 +1,70 @@
+
+.rooms {
+    @include spaces;
+
+    .container {
+        padding: 0;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        border-radius: 0;
+        border: 1px solid $color-black;
+        padding: 0 50px;
+        height: 35px;
+        font-size: 12px;
+        color: $color-white;
+        background-color: $color-grey;
+        margin: 20px 0;
+    }
+
+    .btn:hover {
+        border: 1px solid $color-black;
+        color: $color-white;
+        background-color: $color-grey-light;
+    }
+    .card {
+        .card-title {
+            color: $color-grey;
+            font-size: 25px;
+            margin: 20px 0;
+
+        }
+
+        .card-body {
+            margin-top: 5px;
+            padding: 30px 10px;
+            border: 1px solid $color-black;
+            margin: 10px;
+        }
+
+        .btn {
+            padding: 5px 50px;
+            border-radius: 0;
+            border-color: $color-black;
+            background-color: $color-grey;
+        }
+
+        .btn:hover {
+            background-color: $color-grey-light;
+            border-color: $color-black;
+        }
+    }
+
+   
+
+}
+
+@media (min-width: $width-tablet ) {
+    .rooms {
+        .card {
+            .card-body {
+                margin: 0px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+

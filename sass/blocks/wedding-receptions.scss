@@ -1,0 +1,75 @@
+.wedding-receptions {
+    @include spaces;
+
+    .row{
+        
+        .row{
+            height: 100%;
+            .article{
+                height: 100%;
+            }
+        }
+    }
+    .card{
+        border: none;
+        
+    }
+    .card p{
+        font-size: 14px;
+    }
+    .card-body h2{
+        font-size: 35px;
+        font-weight: bold;
+        color: $color-grey;
+    }
+    .card-body p{
+        color: $color-grey;
+        font-size: 15px;        
+    }
+
+
+    .btn {
+        margin: 20px 0;
+        padding: 5px 40px;
+        border-radius: 0;
+        border: 1px solid $color-black;
+        color: $color-black;
+    }
+
+    .btn:hover {
+        border: 1px solid $color-black;
+        background-color: $color-grey-light;
+    }
+}
+
+@media (min-width: $width-tablet ) {
+    .wedding-receptions {
+        .row{
+        .row{
+            border: 1px solid $color-black;
+
+        }
+        
+        }
+        .img{
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .btn {
+            padding: 5px 150px;
+        }
+    }
+}
+@media (min-width: $width-desktop ) {
+    .wedding-receptions {
+ 
+ 
+        .img{
+            height: 265px;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+ 
+}
